@@ -1,0 +1,4 @@
+lldb -p $(pgrep WeChat)
+br set -n sqlite3_key
+c
+memory read --size 1 --format x --count 32 $rsi
