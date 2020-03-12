@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>{{title}}</title>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
+    <link href='web.css' rel='stylesheet' type='text/css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="web.js"></script>
+</head>
+
+<body>
+    <div id="chatbox">
+        <div id="records">
+            <div class="record">
+                <p>
+                    <strong>{{main_title}}</strong>
+                    <span>{{sub_title}}</span>
+                </p>
+                <div class="status available"></div>
+            </div>
+        </div>
+
+        <div id="messageview" class="p1">
+            <div id="title">
+                <div id="close">
+                    <div class="cy"></div>
+                    <div class="cx"></div>
+                </div>
+                <p>{{main_title}}</p>
+                <span>{{sub_title}}</span>
+            </div>
+            <div id="chat-messages">
+                <label>{{message_date}}</label>
+
+                <div class="message">
+                    <img src="{{message_receiver}}" />
+                    <div class="bubble">
+                        {{message_text}}
+                        <div class="corner"></div>
+                        <span>{{message_time}}</span>
+                    </div>
+                </div>
+
+                <div class="message right">
+                    <img src="{{message_sender}}" />
+                    <div class="bubble">
+                        {{message_text}}
+                        <div class="corner"></div>
+                        <span>{{message_time}}</span>
+                    </div>
+                </div>
+            </div>
+
+            <div id="sendlove">
+                <input type="text" value="Send Love..." />
+                <button id="send"></button>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
