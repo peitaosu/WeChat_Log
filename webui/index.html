@@ -11,13 +11,16 @@
 
 <body>
     <div id="chatbox">
-        <div id="records">
-            <div class="record">
+        <div id="holder">
+        </div>
+        <div id="entrances">
+            <div class="entrance">
                 <p>
                     <strong>{{main_title}}</strong>
+                </p>
+                <p>
                     <span>{{sub_title}}</span>
                 </p>
-                <div class="status available"></div>
             </div>
         </div>
 
@@ -34,7 +37,7 @@
                 <label>{{message_date}}</label>
 
                 <div class="message">
-                    <img src="{{message_receiver}}" />
+                    <img/>
                     <div class="bubble">
                         {{message_text}}
                         <div class="corner"></div>
@@ -43,7 +46,7 @@
                 </div>
 
                 <div class="message right">
-                    <img src="{{message_sender}}" />
+                    <img/>
                     <div class="bubble">
                         {{message_text}}
                         <div class="corner"></div>

@@ -5,69 +5,86 @@ body {
 }
 #chatbox{
     width:480px;
-    background:#fff;
+    background: #fff;
     border-radius:6px;
     overflow:hidden;
     height:854px;
     position:absolute;
     top:100px;
     left:50%;
-    margin-left:-155px;
+    margin-left:-240px;
 }
 
-#recordslist{
-    position:absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
+#holder {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background:#fff url("entrance_bg.jpeg") 0 0 no-repeat;
+    background-size: cover;
+    background-position: center;
+    -webkit-filter: blur(2px);
+    -moz-filter: blur(2px);
+    -ms-filter: blur(2px);
+    -o-filter: blur(2px);
+    filter: blur(2px);
 }
 
-#topmenu span.records{margin-bottom:-1px;}
-#topmenu span.chats{background-position:-95px 25px; cursor:pointer;}
-#topmenu span.chats:hover{background-position:-95px -46px; cursor:pointer;}
-#topmenu span.history{background-position:-190px 24px; cursor:pointer;}
-#topmenu span.history:hover{background-position:-190px -47px; cursor:pointer;}
-.record{
-    height:70px;
-    border-bottom:1px solid #e7ebee;        
+#entrances{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.entrance{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width:150px;
+    height:150px;
+    float:left;
     position:relative;
 }
-.record:hover{
+
+.entrance:hover{
+    border-radius: 50%;
     background:#f1f4f6;
     cursor:pointer;
 }
-.record img{
-    width:40px;
+.entrance img{
+    width:150px;
     border-radius:50%;
     margin:15px;
     float:left;
 }
 .floatingImg{
-    width:40px;
+    width:100px;
     border-radius:50%;
     position:absolute;
     top:0;
-    left:12px;
-    border:3px solid #fff;
+    left:0px;
 }
-.record p{
-    padding:15px 0 0 0;         
-    float:left;
-    width:220px;
+.entrance p{
+    margin-top: 50px;
+    margin-bottom: -45px;
+    display:block;
+    widows:100px;
+    text-align: center;
 }
-.record p strong{
-  font-weight:600;
-  font-size:15px;
+.entrance p strong{
+    width: 100%;
+    font-weight:600;
+    font-size:20px;
     color:#597a96;  
-
+    text-align: center;
 }
-.record p span{
-    font-size:13px;
+.entrance p span{
+    width: 100%;
+    font-size:14px;
     font-weight:400;
     color:#aab8c2;
+    text-align: center;
 }
-.record .status{
+.entrance .status{
     background:#26c281;
     border-radius:50%;  
     width:9px;
@@ -76,29 +93,8 @@ body {
     top:31px;
     right:17px;
 }
-.record .status.away{background:#ffce54;}
-.record .status.inactive{background:#eaeef0;}
-#search{
-    background:#e3e9ed url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/245657/search.png") -11px 0 no-repeat;
-    height:60px;
-    width:290px;
-    position:absolute;
-    bottom:0;
-    left:0;
-}
-#searchfield{
-    background:#e3e9ed;
-    margin:21px 0 0 55px;
-    border:none;
-    padding:0;
-    font-size:14px;
-    font-family:"Open Sans", sans-serif; 
-    font-weight:400px;
-    color:#8198ac;
-}
-#searchfield:focus{
-     outline: 0;
-}
+.entrance .status.away{background:#ffce54;}
+.entrance .status.inactive{background:#eaeef0;}
 #messageview{
     width:100%;
     height:100%;
@@ -115,7 +111,7 @@ body {
     color:#fff;
 }
 .p1 #title{
-    background:#fff url("bg.jpeg") 0 0 no-repeat;
+    background:#fff url("chat_bg.jpeg") 0 0 no-repeat;
     background-size: cover;
     background-position: center;
 }
@@ -187,13 +183,15 @@ body {
       margin-left: 19px;
 }
 #chat-messages .message img{
-      float: left;
-      margin-left: -38px;
-      border-radius: 50%;
-      width: 30px;
-      margin-top: 12px;
+    content: url("receiver.jpeg");
+    float: left;
+    margin-left: -38px;
+    border-radius: 50%;
+    width: 30px;
+    margin-top: 12px;
 }
 #chat-messages div.message.right img{
+    content: url("sender.jpeg");
     float: right;   
     margin-left: 0;
     margin-right: -38px;    
@@ -208,6 +206,7 @@ body {
     position:relative;
     float:left;
 }
+
 #chat-messages div.message.right .bubble{
     float:right;
     border-radius:5px 5px 0px 5px ;
