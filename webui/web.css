@@ -231,7 +231,7 @@ div.message.right .corner{
       right: 0;
       bottom: -22px;
 }
-#sendlove{
+#sendmessage{
     height:60px;
     border-top:1px solid #e7ebee;   
     position:absolute;
@@ -241,11 +241,11 @@ div.message.right .corner{
     background:#fff;
     padding-bottm:50px;
 }
-#sendlove input{
+#sendmessage input{
     border:none;
 }
 
-#sendlove input{
+#sendmessage input{
     background:#fff;
     margin:21px 0 0 21px;
     border:none;
@@ -256,10 +256,10 @@ div.message.right .corner{
     color:#aab8c2;
 }
 
-#sendlove input:focus{
+#sendmessage input:focus{
      outline: 0;
 }
-#sendlove button{
+#sendmessage button{
     background:#fff url("heart.png") 0 no-repeat;
     background-size: 30px 30px;
     width:30px;
@@ -269,11 +269,11 @@ div.message.right .corner{
     top: 15px;
     border:none;
 }
-#sendlove button:hover{
+#sendmessage button:hover{
     cursor:pointer;
     background-position: 0 0 ;
 }
-#sendlove button:focus{
+#sendmessage button:focus{
      outline: 0;     
 }
 
@@ -360,7 +360,7 @@ div.message.right .corner{
          -o-transition: all 100ms ease-out;
             transition: all 100ms ease-out;
 }
-#messageview, #sendlove { 
+#messageview, #sendmessage { 
     overflow:hidden; 
     border-radius:6px; 
 }

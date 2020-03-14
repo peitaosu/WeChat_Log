@@ -1,13 +1,13 @@
 $(document).ready(function () {
 
-    $("#sendlove input").focus(function () {
-        if ($(this).val() == "Send Love...") {
+    $("#sendmessage input").focus(function () {
+        if ($(this).val() == "Send Message...") {
             $(this).val("");
         }
     });
-    $("#sendlove input").focusout(function () {
+    $("#sendmessage input").focusout(function () {
         if ($(this).val() == "") {
-            $(this).val("Send Love...");
+            $(this).val("Send Message...");
 
         }
     });
