@@ -58,6 +58,7 @@ $(document).ready(function () {
                 }, 50);
             });
 
+            document.getElementById("wc_img").style["display"] = "block";
         });
     });
 });
