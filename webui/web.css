@@ -3,7 +3,8 @@ body {
     background: #f0f1f2;
     font:12px "Open Sans", sans-serif; 
 }
-#chatbox{
+
+#navbox{
     width:480px;
     background: #fff;
     border-radius:6px;
@@ -12,7 +13,53 @@ body {
     position:absolute;
     top:100px;
     left:50%;
-    margin-left:-240px;
+    margin-left:40px;
+}
+
+#navbar {
+    width: 100%;
+    height: 60px;
+    margin-top: 40px;
+}
+
+.nav {
+    height: 100%;
+    width: 180px;
+    float: left;
+    margin-left: 40px;
+    text-align: center;
+}
+
+.nav:hover {
+    background-color: #eee;
+}
+
+.nav a {
+    width: 180px;
+    line-height: 60px;
+    font-size:20px;
+    color:#597a96;
+    vertical-align: middle;
+    text-align: center;
+    text-decoration: none;
+}
+
+#wordcloud {
+    width: 100%;
+    margin-top: 40px;
+    height: 714px;
+}
+
+#chatbox{
+    width:480px;
+    background: #fff;
+    border-radius:6px;
+    overflow:hidden;
+    height:854px;
+    position:absolute;
+    top:100px;
+    right:50%;
+    margin-right:40px;
 }
 
 #holder {
