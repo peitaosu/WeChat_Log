@@ -326,7 +326,7 @@ div.message.right .corner{
      outline: 0;
 }
 #sendmessage button{
-    background:#fff url("heart.png") 0 no-repeat;
+    background:#fff url("../img/heart.png") 0 no-repeat;
     background-size: 30px 30px;
     width:30px;
     height:30px;
